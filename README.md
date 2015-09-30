@@ -77,7 +77,7 @@ or directly as follows:
 	user    3m31.380s
 	sys     0m0.200s
 
-### C. Futher speedup
+## C. Futher speedup
 
 LMABR can gain another ~20% speedup in calculation if using fast-math. However, the precision of fitting results could be a problem with critical DTI datasets. This option needs to be investigated furthermore before using in real problems. Enabling fast-math as follow:
 
@@ -96,7 +96,7 @@ LMABR can gain another ~20% speedup in calculation if using fast-math. However, 
 	user    2m51.082s
 	sys     0m0.194s
 
-### D. Others
+## D. Others
 
 The LMABR code was designed to run on GPU at first that's the reason why most of memory buffers are preallocated and accessed linearly. However, this implementation was not suitable for GPU and hurt GPU performace badly (pretty naive for GPU architechure). There were some efforts to tweak the code in other to increase the performance by utilizing GPU shared-memory to store mostly use buffers (e.g. B matrix, Hessian matrix, Jacobian vector of current fitting sample) to gain some speedup in memory accessing. However, it was still naive because it caused number of GPU threads reduce massively as well. In other words, the current LMABR code can be easily modified to compile and run on GPU as a proof-of-concept. But I personally don't think it worth to do it that way, because we gain almost nothing or even waste more times. Besides, we can even get the results in under 30 seconds with a 5-year-old laptop with Quadcore i7 Q720M 1.6GHz as showed above. So, a high-end desktop computer can probabily reduce computation time to 5 seconds.
 
