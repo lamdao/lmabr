@@ -36,12 +36,12 @@ public:
 		return v;
 	}
 
-	template<class T>
+	template<typename T>
 	void put(const T &v) {
 		fwrite(&v, sizeof(T), 1, fp);
 	}
 
-	template<class T>
+	template<typename T>
 	void put(const std::vector<T> &v) {
 		fwrite(v.data(), sizeof(T), v.size(), fp);
 	}
