@@ -1,3 +1,15 @@
+//--------------------------------------------------------------------------
+// fx.h - one tensor model evaluation
+//--------------------------------------------------------------------------
+// Author: Lam H. Dao <daohailam(at)yahoo(dot)com>
+//--------------------------------------------------------------------------
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 3 of the License, or
+//  (at your option) any later version.
+//
+//--------------------------------------------------------------------------
 #define FS0(x)	(x)[0]
 #define FXX(x)	(x)[1]
 #define FXY(x)	(x)[2]
