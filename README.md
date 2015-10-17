@@ -24,7 +24,7 @@ This project implements diffusion tensor estimation for DTI brain dataset using 
 	$ cd lmabr
 	$ make USE_BR=1 USE_OMP=1
 
-#### 5. Compile as shared library
+#### 5. Compile shared library
 
 	$ cd lmabr
 	$ make USE_BR=1 USE_OMP=1 lib
