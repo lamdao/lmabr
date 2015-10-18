@@ -1,6 +1,6 @@
 ## LMABR - Levenberg-Marquardt algorithm with Bayesian regularization for nonlinear diffusion tensor estimation
 
-In this project, diffusion tensor estimation for DWI brain dataset was implemented using Levenberg-Marquardt multivariate nonlinear regression algorithm (LMA) with Bayesian regularization (BR). The BR helps to overcome the problem in interpolating noisy data of LMA (overfitting noise). Test results showed significant improvement of diffusion coefficients (numerical statistic - See part B).
+In this project, diffusion tensor estimation for DWI brain dataset was implemented using Levenberg-Marquardt multivariate nonlinear regression algorithm (LMA) with Bayesian regularization (BR). The BR helped to overcome the problem in interpolating noisy data of LMA (overfitting noise). Test results showed significant improvement of diffusion coefficients (numerical statistic - See part B).
 
 ### A. Compile
 
